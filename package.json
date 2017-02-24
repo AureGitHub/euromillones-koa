@@ -1,5 +1,5 @@
 {
-  "name": "first-server",
+  "name": "euromillones-koa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,7 @@
     "koa": "^2.0.0-alpha.8",
     "koa-body": "^2.0.0",
     "koa-logger": "^1.3.1",
+    "koa-mount": "^2.0.0",
     "koa-router": "^7.0.1"
   },
   "devDependencies": {},
@@ -16,6 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jose Aurelio de Sande Villarroel",
   "license": "ISC"
 }
