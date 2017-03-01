@@ -1,13 +1,14 @@
 const Koa = require('koa');
 const koaLogger = require('koa-logger');
-const logger = require('logger');
+const logger = require('./logger');
 
 
 const app = new Koa();
 
 const body = require('koa-body');
 
-const filmRouter = require('routes/film.router');
+const filmRouter = require('./routes/film.router');
+const aureRouter = require('./routes/aure.router');
 
 const mount = require('koa-mount');
 
@@ -26,6 +27,8 @@ app.use(async (ctx, next) => {
 
 
 app.use(mount('/api/v1', filmRouter.routes()));
+app.use(aureRouter.routes());
+
 
 
 
