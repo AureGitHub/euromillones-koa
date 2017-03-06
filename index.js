@@ -6,6 +6,9 @@ const mongoose = require('mongoose');
 
 const mongoUri = 'mongodb://localhost:27017/films-db';
 
+const passport = require('koa-passport');
+
+
 const onDBReady = (err) => {
     if (err) {
         logger.error('Error connecting', err);
